@@ -23,15 +23,15 @@ $(document).ready(function(){
                     $("#repos").append(`
                         <div class="well">
                             <div class="row repodetail">
-                                <div class="col-md-11">
+                                <div class="col">
                                     <strong>${repo.name}</strong>:${repo.description}
                                 </div>
-                                <div class="col-md-1">
+                                <div class="col">
                                 <p class="location">Forks: ${repo.forks_count}</p>
                                 </div>
                             </div>
                         </div>
-                    `)
+                    `);
                 })
            });
         //    console.log(user);
@@ -41,11 +41,11 @@ $(document).ready(function(){
                     <div class="panel-heading">${user.name}</div>
                     <div class="panel-body">
                         <div class="row>
-                            <div class="col-md-3">
+                            <div class="col">
                                 <img class="thumbnail avatar" src="${user.avatar_url}">
                                 <a target="_blank" class="btn block-primary btn-block view" href="${user.html_url}">View Profile</a>
                             </div>
-                            <div class="col-md-6 detail">
+                            <div class="col detail">
                                 <p class="location">Location: ${user.location}</p>
                                 <p class="repo">Public Repository: ${user.public_repos}</p>
                             </div>
@@ -53,7 +53,7 @@ $(document).ready(function(){
                     </div
                 </div>
             </div>
-            <h3 class="latest-repo">Latest Repository</h3>
+            <h3 class="latestrepo">Latest Repository</h3>
             <div id="repos"></div>
         `);
        });
