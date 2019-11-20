@@ -11,6 +11,12 @@
 .sub-content,.form-control{
     font-size: 24px;
 } */
+.detail{
+    font-size: 20px;
+}
+.location{
+    margin-top:20px;
+}
 .view{
     size: 30px;
     background-color: blue;

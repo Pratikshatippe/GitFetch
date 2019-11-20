@@ -20,6 +20,10 @@ $(document).ready(function(){
                                 <img class="thumbnail avatar" src="${user.avatar_url}">
                                 <a target="_blank" class="btn block-primary btn-block view" href="${user.html_url}">View Profile</a>
                             </div>
+                            <div class="col-md-6 detail">
+                                <p class="location">Location: ${user.location}</p>
+                                <p class="repo">Public Repository: ${user.public_repos}</p>
+                            </div>
                         </div>
                     </div
                 </div>
