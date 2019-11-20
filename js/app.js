@@ -10,7 +10,7 @@ $(document).ready(function(){
            } 
        }).done(function(user){
         //    console.log(user);
-        
-       })
+            $('#profile').html(`User: ${user.name}`);
+       });
     });
 });
