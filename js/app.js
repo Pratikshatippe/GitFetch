@@ -10,7 +10,21 @@ $(document).ready(function(){
            } 
        }).done(function(user){
         //    console.log(user);
-            $('#profile').html(`User: ${user.name}`);
+        $('#profile').html(`
+            <div class="container">
+                <div class="panel panel-default">
+                    <div class="panel-heading">${user.name}</div>
+                    <div class="panel-body">
+                        <div class="row>
+                            <div class="col-md-3">
+                                <img class="thumbnail avatar" src="${user.avatar_url}">
+                                <a target="_blank" class="btn block-primary btn-block view" href="${user.html_url}">View Profile</a>
+                            </div>
+                        </div>
+                    </div
+                </div>
+            </div>
+        `);
        });
     });
 });
